@@ -1,0 +1,6 @@
+- Installed tensor package: 
+go get -u "gorgonia.org/tensor"
+
+- A tensor is a represented by a 3d homologous array
+- The dotProduct is the for loop multiplying the inputs and weights
+>>> neuronOutput = dotProduct + bias

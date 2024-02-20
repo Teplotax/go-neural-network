@@ -1,4 +1,4 @@
-package MachineLearning
+package ml
 
 import (
 	"fmt"
@@ -7,10 +7,10 @@ import (
 	t "gorgonia.org/tensor"
 )
 
-func LayerOutput(dotProduct t.Tensor, rawBiases []float32) (t.Tensor, error) {
+func LayerOutput(dotProduct t.Tensor, rawBiases []float64) (t.Tensor, error) {
 
 	newShape := dotProduct.Shape()
-	newRawBiases := []float32{}
+	newRawBiases := []float64{}
 
 	for i := 0; i < newShape[0]; i++ {
 		newRawBiases = append(newRawBiases, rawBiases...)

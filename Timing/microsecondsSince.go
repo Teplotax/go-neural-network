@@ -1,4 +1,4 @@
-package Performance
+package timing
 
 import (
 	"fmt"

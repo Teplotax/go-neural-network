@@ -1,9 +1,0 @@
-- Installed tensor package: 
-go get -u "gorgonia.org/tensor"
-
-- A tensor is a represented by a 3d homologous array
-- The dotProduct is the for loop multiplying the inputs and weights
->>> neuronOutput = dotProduct + bias
-
-- Its beneficial to work with batches of inputs to train the neural network
-- it was necessary to implement a method to reshape the rawBiases to add to de dotProduct tensor

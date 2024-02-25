@@ -20,3 +20,19 @@ func (r *ActivationReLU) Forward(inputs t.Tensor) {
 
 	r.Outputs = outputs
 }
+
+type ActivationSoftMax struct {
+	Outputs t.Tensor
+}
+
+func NewActivationSoftMax() ActivationSoftMax {
+	return ActivationSoftMax{Outputs: t.New(t.Of(t.Float64))}
+}
+
+func (s *ActivationSoftMax) Forward(inputs t.Tensor, axis int) {
+
+	outputs, err := t.SoftMax(inputs, axis)
+	handleErr(err)
+
+	s.Outputs = outputs
+}

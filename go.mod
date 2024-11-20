@@ -2,7 +2,11 @@ module github.com/Teplotax/go-neural-network
 
 go 1.20
 
-require gorgonia.org/tensor v0.9.24
+require (
+	gonum.org/v1/gonum v0.14.0
+	gonum.org/v1/plot v0.14.0
+	gorgonia.org/tensor v0.9.24
+)
 
 require (
 	git.sr.ht/~sbinet/gg v0.5.0 // indirect
@@ -17,6 +21,12 @@ require (
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golang/freetype v0.0.0-20170609003504-e2365dfdc4a0 // indirect
 	github.com/golang/protobuf v1.5.3 // indirect
+	github.com/gonum/blas v0.0.0-20181208220705-f22b278b28ac // indirect
+	github.com/gonum/floats v0.0.0-20181209220543-c233463c7e82 // indirect
+	github.com/gonum/internal v0.0.0-20181124074243-f884aa714029 // indirect
+	github.com/gonum/lapack v0.0.0-20181123203213-e4cdc5a0bff9 // indirect
+	github.com/gonum/matrix v0.0.0-20181209220409-c518dec07be9 // indirect
+	github.com/gonum/stat v0.0.0-20181125101827-41a0da705a5b // indirect
 	github.com/google/flatbuffers v23.5.26+incompatible // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
@@ -25,8 +35,6 @@ require (
 	golang.org/x/image v0.15.0 // indirect
 	golang.org/x/text v0.14.0 // indirect
 	golang.org/x/xerrors v0.0.0-20231012003039-104605ab7028 // indirect
-	gonum.org/v1/gonum v0.14.0 // indirect
-	gonum.org/v1/plot v0.14.0 // indirect
 	google.golang.org/protobuf v1.32.0 // indirect
 	gorgonia.org/vecf32 v0.9.0 // indirect
 	gorgonia.org/vecf64 v0.9.0 // indirect

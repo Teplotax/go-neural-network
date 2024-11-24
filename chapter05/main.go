@@ -33,4 +33,12 @@ func main() {
 	fmt.Println(activation2.Outputs)
 	fmt.Println(loss)
 	fmt.Println(avgLoss)
+
+	// Accuracy Calculation
+
+	outputs := activation2.Outputs
+
+	accuracy := ml.Accuracy(outputs, rawY)
+
+	fmt.Println(accuracy)
 }

@@ -34,6 +34,10 @@ func (layer *LayerDense) Forward(inputs t.Tensor) {
 	handleErr(err)
 }
 
+func SetWeights(layer *LayerDense, newWeights t.Tensor) {
+	layer.Outputs = newWeights
+}
+
 func handleErr(err error) {
 	if err != nil {
 		log.Fatal(err)

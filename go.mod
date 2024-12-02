@@ -4,6 +4,7 @@ go 1.20
 
 require (
 	gonum.org/v1/plot v0.14.0
+	gorgonia.org/gorgonia v0.9.17
 	gorgonia.org/tensor v0.9.24
 )
 

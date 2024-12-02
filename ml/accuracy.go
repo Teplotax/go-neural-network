@@ -1,7 +1,6 @@
 package ml
 
 import (
-	"fmt"
 	t "gorgonia.org/tensor"
 )
 
@@ -22,8 +21,8 @@ func Accuracy(outputs t.Tensor, targetOutput []float64) float64 {
 
 	}
 
-	fmt.Printf("Hits: %v\n", hit)
-	fmt.Printf("Total: %v\n", len(targetOutput))
+	//fmt.Printf("Hits: %v\n", hit)
+	//fmt.Printf("Total: %v\n", len(targetOutput))
 
 	return hit / float64(len(targetOutput))
 }
